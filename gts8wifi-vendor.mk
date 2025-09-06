@@ -111,24 +111,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_chipset.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_chipset.json \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_hyper_permission.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_hyper_permission.json \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service-lazy.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.clearkey.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.health@2.1-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service-samsung.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.security.keymint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.usb@1.3-service.coral.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.3-service.coral.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/argos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/argos.rc \
@@ -137,7 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/emservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/emservice.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/face-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default-sec.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
@@ -940,7 +934,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
     libaidenoiser \
     libaivideocentral.arcsoft \
     libarcsoft_aieffectpk_video \
@@ -1459,11 +1452,6 @@ PRODUCT_PACKAGES += \
     libstagefright_omx_vendor \
     libvicom \
     SWPD_libTsAf_Hi1337_WIDE \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-impl \
     com.ss.stats.awb \
     com.ss.stats.pdlib \
     libTsAeFront_tabs8p \
@@ -1534,12 +1522,10 @@ PRODUCT_PACKAGES += \
     libmppdeflicker \
     libmppfrc \
     libnanopb \
-    libnetfilter_conntrack \
     libnetmgr_datapath_proxy \
     libnetmgr_sscm3 \
     libnetmgrmodemproxy \
     libnetmgrportutils \
-    libnfnetlink \
     libnlnetmgr \
     libpal_net_if \
     libpetcamera_engine \
@@ -1664,22 +1650,16 @@ PRODUCT_PACKAGES += \
     CACertService \
     TimeService \
     com.qualcomm.qti.gpudrivers.taro.api32 \
-    android.hardware.atrace@1.0-service.xml \
-    android.hardware.cas@1.2-service-lazy.xml \
     android.hardware.dumpstate@1.1-service-lazy.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.gnss@2.1-service-qti.xml \
-    android.hardware.health@2.1-samsung.xml \
-    android.hardware.sensors@2.1-multihal.xml \
     android.hardware.usb@1.3-service.coral.xml \
     c2_manifest_vendor_audio.xml \
     deviceManifest.xml \
     engmode_manifest.xml \
-    face-default-sec.xml \
     hyper-default-sec.xml \
     iweaver_v1_manifest.xml \
     lights-default-sec.xml \
-    manifest_android.hardware.drm@1.4-service.clearkey.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_non_qmaa.xml \
     memtrack_qti.xml \
@@ -1700,7 +1680,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.fkeymaster-service.xml \
     vendor.samsung.hardware.security.hdcp.wifidisplay-default.xml \
     vendor.samsung.hardware.security.widevine.keyprov-service.xml \
-    vendor.samsung.hardware.snap-default.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
     vendor.samsung.hardware.tlc.ddar@1.0-manifest.xml \
     vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml \
@@ -1740,22 +1719,17 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hermesd \
     hostapd_cli \
-    android.hardware.atrace@1.0-service \
     android.hardware.audio.service \
     android.hardware.audio.service_64 \
     android.hardware.bluetooth@1.0-service-qti \
-    android.hardware.cas@1.2-service-lazy \
-    android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.dumpstate@1.1-service-lazy \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gnss-aidl-service-qti \
-    android.hardware.health@2.1-service-samsung \
     android.hardware.keymaster@4.0-strongbox-service-qti \
     android.hardware.media.omx@1.0-service \
     android.hardware.power.samsung-service \
     android.hardware.security.keymint-service \
-    android.hardware.sensors@2.1-service.multihal \
     android.hardware.usb@1.3-service.coral \
     macloader \
     mfgloader \
