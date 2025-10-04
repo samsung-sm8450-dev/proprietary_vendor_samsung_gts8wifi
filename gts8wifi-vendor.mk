@@ -183,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
@@ -1587,7 +1586,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk_platform \
     vendor.samsung.hardware.security.hermes-V1-ndk_platform \
     vendor.samsung.hardware.security.skpm@1.0 \
-    vendor.samsung.hardware.security.vaultkeeper@2.0 \
     vendor.samsung.hardware.security.widevine.keyprov-V1-ndk_platform \
     vendor.samsung.hardware.snap-V1-ndk_platform \
     vendor.samsung.hardware.sysinput@1.0 \
@@ -1668,7 +1666,6 @@ PRODUCT_PACKAGES += \
     radio_manifest_wifionly.xml \
     sec_c2_manifest_default0_1_0.xml \
     secaudiohalaidl_manifest.xml \
-    vaultkeeper_manifest.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.perf.xml \
@@ -1817,12 +1814,10 @@ PRODUCT_PACKAGES += \
     time_daemon \
     ubwcconvert \
     utility_cache_test.tflite \
-    vaultkeeperd \
     vendor.samsung.hardware.security.engmode@1.0-service \
     vendor.samsung.hardware.security.fkeymaster-service \
     vendor.samsung.hardware.security.hdcp.wifidisplay-service \
     vendor.samsung.hardware.security.proca@2.0-service \
-    vendor.samsung.hardware.security.vaultkeeper@2.0-service \
     vmmgr \
     wpa_cli \
     wvkprov \

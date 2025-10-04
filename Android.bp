@@ -11929,7 +11929,7 @@ cc_prebuilt_library_shared {
                 "libhwbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "libcrypto",
+                "libcrypto-v33",
                 "vendor.qti.hardware.eid@1.0",
                 "libGPTEE_vendor",
                 "vendor.qti.hardware.trustedui@1.0",
@@ -21437,7 +21437,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libQSEEComAPI",
                 "liblog",
-                "libcrypto",
+                "libcrypto-v33",
                 "libdmabufheap",
                 "libspcom",
                 "libc++",
@@ -29652,7 +29652,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcrypto",
+                "libcrypto-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -39143,7 +39143,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libQSEEComAPI",
                 "liblog",
-                "libcrypto",
+                "libcrypto-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -40216,7 +40216,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libengmode15.so",
             ],
             shared_libs: [
-                "libcrypto",
+                "libcrypto-v33",
                 "libstork_shared",
                 "liblog",
                 "libc",
@@ -40586,7 +40586,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libQSEEComAPI",
                 "liblog",
-                "libcrypto",
+                "libcrypto-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -41383,7 +41383,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libcrypto",
+                "libcrypto-v33",
                 "libhidlbase",
                 "libutils",
                 "libcutils",
@@ -41561,7 +41561,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libskeymint10device.so",
             ],
             shared_libs: [
-                "libcrypto",
+                "android.hardware.security.rkp-V3-ndk",
+                "libcrypto-v33",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -41599,6 +41600,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libskeymint_cli.so",
             ],
             shared_libs: [
+                "android.hardware.security.rkp-V3-ndk",
                 "liblog",
                 "libbase",
                 "libcutils",
@@ -41608,7 +41610,7 @@ cc_prebuilt_library_shared {
                 "libkeymaster4support",
                 "libkeymaster4_1support",
                 "libhidlbase",
-                "libcrypto",
+                "libcrypto-v33",
                 "libbinder_ndk",
                 "libsecril-client",
                 "android.hardware.security.keymint-V4-ndk",
@@ -42545,6 +42547,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.keymint-V1-ndk_platform.so",
             ],
             shared_libs: [
+                "android.hardware.security.rkp-V3-ndk",
                 "libbinder_ndk",
                 "android.hardware.security.keymint-V4-ndk",
                 "libc++",
@@ -42886,34 +42889,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.samsung.hardware.security.skpm@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.security.vaultkeeper@2.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -44123,15 +44098,6 @@ prebuilt_etc_xml {
     name: "secaudiohalaidl_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vaultkeeper_manifest.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vaultkeeper_manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -45413,7 +45379,7 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "android.hardware.keymaster@4.0",
                 "libqtikeymaster4",
-                "libcrypto",
+                "libcrypto-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -45506,6 +45472,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.security.keymint-service",
             ],
             shared_libs: [
+                "android.hardware.security.rkp-V3-ndk",
                 "libskeymint10device",
                 "vendor.samsung.hardware.keymint-V1-ndk_platform",
                 "android.hardware.security.keymint-V4-ndk",
@@ -45513,8 +45480,8 @@ cc_prebuilt_binary {
                 "android.hardware.security.secureclock-V1-ndk",
                 "libbase",
                 "libbinder_ndk",
-                "libcppbor_external",
-                "libcrypto",
+                "libcppbor",
+                "libcrypto-v33",
                 "libkeymaster_portable",
                 "libkeymint",
                 "liblog",
@@ -48282,34 +48249,6 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vaultkeeperd",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vaultkeeperd",
-            ],
-            shared_libs: [
-                "libdsms_vendor",
-                "libvkservice",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.samsung.hardware.security.engmode@1.0-service",
     owner: "samsung",
     target: {
@@ -48350,7 +48289,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/vendor.samsung.hardware.security.fkeymaster-service",
             ],
             shared_libs: [
-                "libcrypto",
+                "libcrypto-v33",
                 "libcutils",
                 "libhidlbase",
                 "libbase",
@@ -48422,37 +48361,6 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.security.vaultkeeper@2.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.samsung.hardware.security.vaultkeeper@2.0",
-                "libvkmanager_vendor",
                 "libc++",
                 "libc",
                 "libm",
