@@ -92,7 +92,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
+    vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
+    vendor/samsung/gts8wifi/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/qdcm_calib_data_GTS8_NT36523_TL109BVMS2.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_GTS8_NT36523_TL109BVMS2.json \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/display/qdcm_calib_data_ss_dsi_panel_NT36523_PPA957DB1_WQXGA.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_ss_dsi_panel_NT36523_PPA957DB1_WQXGA.json \
@@ -999,8 +1001,6 @@ PRODUCT_PACKAGES += \
     libdiagjni \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayqos \
-    libdisplayskuutils \
     libdpps \
     libdrmfs \
     libdrmtime \
@@ -1177,7 +1177,6 @@ PRODUCT_PACKAGES += \
     libqppe \
     libqrtr \
     libqrtrclient \
-    libqseed3 \
     libqshcamera \
     libqsocket \
     libqti-iopd-client \
@@ -1203,9 +1202,6 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdm-color \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsec2qc_conversion \
     libsecaudiocoreutils \
@@ -1270,13 +1266,11 @@ PRODUCT_PACKAGES += \
     libtensorflowLite.singletake.camera.samsung \
     libtensorflowlite.camera.samsung \
     libtensorflowlite_gpu.camera.samsung \
-    libtestutils \
     libtfestriping \
     libthermalclient \
     libthirdparty_zoomtranslator_imp \
     libthreadutils \
     libtime_genoff \
-    libtinyxml2_1 \
     libtriplecam_image_optical_zoom \
     libtrustedapploader \
     libtswrappercommon \
@@ -1489,6 +1483,8 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_ac4dec \
     libcodec2_soft_eac3dec \
     libdeccfg \
+    libdisplayqos \
+    libdisplayskuutils \
     libdk_vnd_service_core \
     libdsms_vendor \
     libengmode15 \
@@ -1530,9 +1526,15 @@ PRODUCT_PACKAGES += \
     libpetcamera_engine \
     libqapesdk \
     libqesdk \
+    libqseed3 \
     libqtikeymaster4 \
     librapidscorerplus \
+    librcmask \
     libreffeature \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdm-disp-vndapis \
+    libsdmextension \
     libsec_skpmHalTlc \
     libsecril-client \
     libshctrl \
@@ -1551,6 +1553,8 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_domains_v3 \
     libsnpe_wrapper \
     libsomxcmn \
+    libtestutils \
+    libtinyxml2_1 \
     libtlc_comm_ddar \
     libtlc_comm_iccc \
     libtlc_direct_comm_ddar \
