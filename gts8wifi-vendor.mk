@@ -999,9 +999,7 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdiag \
     libdiagjni \
-    libdigital-dimming \
     libdisp-aba \
-    libdpps \
     libdrmfs \
     libdrmtime \
     libdsd2pcm \
@@ -1152,9 +1150,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_platform \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqdcm-algo \
-    libqdcm-json-mode-parser \
-    libqdcm-mode-parser \
     libqdi \
     libqdma_file_agent \
     libqdp \
@@ -1230,8 +1225,6 @@ PRODUCT_PACKAGES += \
     libsnaace \
     libsnamrnb \
     libsnamrwb \
-    libsnapdragoncolor-manager \
-    libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_registry_skel \
@@ -1468,6 +1461,7 @@ PRODUCT_PACKAGES += \
     libai_denoiser_interface \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
+    libbacklight-calib \
     libc++_shared \
     libclconverter \
     libcodec2_sec_aacdec \
@@ -1483,9 +1477,11 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_ac4dec \
     libcodec2_soft_eac3dec \
     libdeccfg \
+    libdigital-dimming \
     libdisplayqos \
     libdisplayskuutils \
     libdk_vnd_service_core \
+    libdpps \
     libdsms_vendor \
     libengmode15 \
     libengmode2lite \
@@ -1508,6 +1504,7 @@ PRODUCT_PACKAGES += \
     libloadalgo_stub \
     libmdmimgload \
     libmediaconverter \
+    libmemutils \
     libmeters \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
@@ -1525,6 +1522,9 @@ PRODUCT_PACKAGES += \
     libpal_net_if \
     libpetcamera_engine \
     libqapesdk \
+    libqdcm-algo \
+    libqdcm-json-mode-parser \
+    libqdcm-mode-parser \
     libqesdk \
     libqseed3 \
     libqtikeymaster4 \
@@ -1546,6 +1546,8 @@ PRODUCT_PACKAGES += \
     libsnap_compute_wrapper_secure \
     libsnap_vndk \
     libsnap_vndk_secure \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libsnaplite_native \
     libsnaplite_native_secure \
     libsnaplite_wrapper \
