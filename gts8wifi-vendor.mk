@@ -937,6 +937,7 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libaidenoiser \
     libaivideocentral.arcsoft \
+    libar-pal \
     libarcsoft_aieffectpk_video \
     libarcsoft_aieffectpk_video_bokeh \
     libarcsoft_aieffectpk_video_plight \

@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/samsung/gts8wifi",
         "vendor/samsung/gts8wifi",
         "vendor/qcom/opensource/display",
         "hardware/qcom-caf/sm8450",
@@ -5153,6 +5154,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/camx.device@3.2-impl.so",
             ],
             shared_libs: [
+                "libcamera_provider_shim",
                 "android.hardware.camera.device@3.2",
                 "android.hardware.camera.provider@2.4",
                 "android.hardware.graphics.mapper@2.0",
@@ -5366,6 +5368,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/camx.device@3.4-impl.so",
             ],
             shared_libs: [
+                "libcamera_provider_shim",
                 "android.hardware.camera.device@3.2",
                 "android.hardware.camera.device@3.3",
                 "android.hardware.camera.device@3.4",
@@ -15306,6 +15309,62 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libar-pal",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libar-pal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libexpat",
+                "libaudioroute",
+                "libcutils",
+                "libtinyalsa",
+                "libtinycompress",
+                "libsecaudioinfo",
+                "libsecaudiolevel",
+                "librecordalive",
+                "libspeakercalibration",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-pal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libexpat",
+                "libaudioroute",
+                "libcutils",
+                "libtinyalsa",
+                "libtinycompress",
+                "libsecaudioinfo",
+                "libsecaudiolevel",
+                "librecordalive",
+                "libspeakercalibration",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_aieffectpk_video",
     owner: "samsung",
     strip: {
@@ -16236,6 +16295,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libc2filterplugin.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libbase",
                 "libcodec2",
                 "libcutils",
@@ -32182,6 +32242,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/unihal_android.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libbase",
                 "libui",
                 "libutils",
@@ -36901,6 +36962,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so",
             ],
             shared_libs: [
+                "libcamera_provider_shim",
                 "libhidlbase",
                 "libutils",
                 "libcutils",
@@ -37048,6 +37110,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so",
             ],
             shared_libs: [
+                "libcamera_provider_shim",
                 "android.hardware.camera.common@1.0",
                 "android.hardware.camera.device@1.0",
                 "android.hardware.camera.device@3.2",
@@ -37637,6 +37700,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libapex_cmn.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libutils",
                 "libbinder",
                 "libui",
@@ -38369,6 +38433,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libSecC2ComponentStore.so",
             ],
             shared_libs: [
+                "libshim_c2",
                 "libcodec2",
                 "android.hardware.media.c2@1.0",
                 "android.hardware.media.c2@1.1",
@@ -40315,6 +40380,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmpp_common_vendor.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "vendor.samsung.hardware.media.mpp-V5-ndk_platform",
                 "libutils",
                 "libcutils",
