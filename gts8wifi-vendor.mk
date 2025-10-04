@@ -989,7 +989,6 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libcneqmiutils \
     libcodecsolutionhelper_vendor \
-    libcolor-default \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
@@ -1025,7 +1024,6 @@ PRODUCT_PACKAGES += \
     libfidoauthnr_v2 \
     libfloatingfeature \
     libformatConverter.unifunc \
-    libgame_enhance \
     libgeofencing \
     libgf_in_system_lib \
     libgnss \
@@ -1039,11 +1037,7 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr10plus \
-    libhdr_backlight_adapter \
-    libhdr_tm \
     libhdradaptivecustom \
-    libhdrdynamic \
-    libhdrdynamicootf \
     libhermes \
     libhypermotion_core \
     libhypermotion_interface \
@@ -1476,6 +1470,7 @@ PRODUCT_PACKAGES += \
     libcodec2_sec_vc1dec \
     libcodec2_soft_ac4dec \
     libcodec2_soft_eac3dec \
+    libcolor-default \
     libdeccfg \
     libdigital-dimming \
     libdisplayqos \
@@ -1489,9 +1484,14 @@ PRODUCT_PACKAGES += \
     libengmode_server \
     libengmode_tlc \
     libese-grdg \
+    libgame_enhance \
+    libhdr_backlight_adapter \
     libhdr_backlight_adapter_qti \
+    libhdr_tm \
     libhdraid.gpu.arcsoft \
     libhdraid.npu.arcsoft \
+    libhdrdynamic \
+    libhdrdynamicootf \
     libhermes_bdbridge \
     libhermes_cred \
     libhwvault \
