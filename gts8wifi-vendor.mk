@@ -6,6 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/gts8wifi
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/gts8wifi/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
+    vendor/samsung/gts8wifi/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
+    vendor/samsung/gts8wifi/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
+    vendor/samsung/gts8wifi/proprietary/vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/DsgpPolicy.csv:$(TARGET_COPY_OUT_VENDOR)/etc/DsgpPolicy.csv \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
@@ -113,8 +117,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_chipset.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_chipset.json \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_hyper_permission.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_hyper_permission.json \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc \
@@ -190,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
+    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.eid@1.0-service.rc \
@@ -643,7 +646,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/camera/t_t10_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/t_t10_dual_calibration.bin \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/uw_dual_calibration.bin \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmclient.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagmmixer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmmixer.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gsl.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libats.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-osal.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/p3_profile.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/p3_profile.bin \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/samsung/gts8wifi/proprietary/vendor/saiv/image_understanding/db/af_segmenter/af_segmenter_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/af_segmenter/af_segmenter_cnn.dlc \
     vendor/samsung/gts8wifi/proprietary/vendor/saiv/image_understanding/db/af_segmenter/af_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/af_segmenter/af_segmenter_cnn.info \
     vendor/samsung/gts8wifi/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tflite \
@@ -831,16 +846,6 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio@7.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gnss-aidl-impl-qti \
@@ -1438,6 +1443,7 @@ PRODUCT_PACKAGES += \
     libTsAeFront_tabs8p \
     libTsAe_tabs8pu \
     libdepthmapwrapper_secure \
+    android.hardware.gnss@2.1-impl-qti \
     gatekeeper.mdfpp \
     libsecaudiohal_aidl \
     libDLInterface.camera.samsung \
@@ -1453,9 +1459,16 @@ PRODUCT_PACKAGES += \
     libTsAf_TS8Q \
     libTsAwbFront_GTS8 \
     libTsAwb_GTS8 \
+    libagm_vendor \
+    libagmclient_vendor \
+    libagmmixer_vendor \
     libai_denoiser_interface \
+    libar-acdb_vendor \
+    libar-gpr_vendor \
+    libar-gsl_vendor \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
+    libats_vendor \
     libbacklight-calib \
     libc++_shared \
     libclconverter \
@@ -1503,6 +1516,8 @@ PRODUCT_PACKAGES += \
     liblearningmodule \
     liblmthermallistner \
     libloadalgo_stub \
+    liblx-ar_util_vendor \
+    liblx-osal_vendor \
     libmdmimgload \
     libmediaconverter \
     libmemutils \
@@ -1521,6 +1536,7 @@ PRODUCT_PACKAGES += \
     libnetmgrportutils \
     libnlnetmgr \
     libpal_net_if \
+    libpalclient_vendor \
     libpetcamera_engine \
     libqapesdk \
     libqdcm-algo \
@@ -1568,6 +1584,8 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libvkservice \
     libwfdaac_vendor \
+    vendor.qti.hardware.AGMIPC@1.0-impl_vendor \
+    vendor.qti.hardware.AGMIPC@1.0_vendor \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.secureprocessor.common@1.0-helper \
     vendor.qti.hardware.secureprocessor.common@1.0 \
@@ -1699,6 +1717,9 @@ PRODUCT_PACKAGES += \
     add.pb \
     adpl \
     adsprpcd \
+    agmcap_vendor \
+    agmcompressplay_vendor \
+    agmplay_vendor \
     argosd \
     athdiag \
     audioflacapp \
@@ -1723,8 +1744,6 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hermesd \
     hostapd_cli \
-    android.hardware.audio.service \
-    android.hardware.audio.service_64 \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.dumpstate@1.1-service-lazy \
@@ -1741,6 +1760,7 @@ PRODUCT_PACKAGES += \
     samsung.software.media.c2@1.0-service \
     secaudiohalaidl \
     vendor.display.color@1.0-service \
+    vendor.qti.hardware.AGMIPC@1.0-service_vendor \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.eid@1.0-service \
     vendor.qti.hardware.iop@2.0-service \

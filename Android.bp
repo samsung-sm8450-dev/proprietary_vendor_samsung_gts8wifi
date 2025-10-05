@@ -10130,658 +10130,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@2.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@2.0",
-                "android.hardware.audio.common@2.0-util",
-                "android.hardware.audio.effect@2.0",
-                "android.hardware.audio.effect@2.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@2.0",
-                "android.hardware.audio.common@2.0-util",
-                "android.hardware.audio.effect@2.0",
-                "android.hardware.audio.effect@2.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@4.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@4.0",
-                "android.hardware.audio.common@4.0-util",
-                "android.hardware.audio.effect@4.0",
-                "android.hardware.audio.effect@4.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@4.0",
-                "android.hardware.audio.common@4.0-util",
-                "android.hardware.audio.effect@4.0",
-                "android.hardware.audio.effect@4.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@5.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@5.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@5.0",
-                "android.hardware.audio.common@5.0-util",
-                "android.hardware.audio.effect@5.0",
-                "android.hardware.audio.effect@5.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@5.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@5.0",
-                "android.hardware.audio.common@5.0-util",
-                "android.hardware.audio.effect@5.0",
-                "android.hardware.audio.effect@5.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@6.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio.effect@6.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio.effect@6.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@7.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio.effect@7.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio.effect@7.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@2.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@2.0",
-                "android.hardware.audio@2.0-util",
-                "android.hardware.audio.common@2.0",
-                "android.hardware.audio.common@2.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@2.0",
-                "android.hardware.audio@2.0-util",
-                "android.hardware.audio.common@2.0",
-                "android.hardware.audio.common@2.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@4.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@4.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@4.0",
-                "android.hardware.audio@4.0-util",
-                "android.hardware.audio.common@4.0",
-                "android.hardware.audio.common@4.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@4.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@4.0",
-                "android.hardware.audio@4.0-util",
-                "android.hardware.audio.common@4.0",
-                "android.hardware.audio.common@4.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@5.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@5.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@5.0",
-                "android.hardware.audio@5.0-util",
-                "android.hardware.audio.common@5.0",
-                "android.hardware.audio.common@5.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@5.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@5.0",
-                "android.hardware.audio@5.0-util",
-                "android.hardware.audio.common@5.0",
-                "android.hardware.audio.common@5.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@6.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio@6.0-util",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio@6.0-util",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@7.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
-                "android.hardware.audio.common@7.0-util",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libmedia_helper",
-                "libmediautils_vendor",
-                "libmemunreachable",
-                "libutils",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
-                "android.hardware.audio.common@7.0-util",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth.audio@2.0-impl",
     owner: "samsung",
     strip: {
@@ -38231,6 +37579,50 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.gnss@2.1-impl-qti",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "android.hardware.gnss@1.0",
+                "android.hardware.gnss@1.1",
+                "android.hardware.gnss@2.0",
+                "android.hardware.gnss@2.1",
+                "android.hardware.gnss.measurement_corrections@1.0",
+                "android.hardware.gnss.measurement_corrections@1.1",
+                "android.hardware.gnss.visibility_control@1.0",
+                "android.hardware.health@1.0",
+                "android.hardware.health@2.0",
+                "android.hardware.health@2.1",
+                "android.hardware.power@1.2",
+                "libbase",
+                "libloc_core",
+                "libgps.utils",
+                "liblocation_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "gatekeeper.mdfpp",
     owner: "samsung",
     strip: {
@@ -38654,6 +38046,95 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libagm_vendor",
+    stem: "libagm",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagm.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libaudioroute",
+                "libcutils",
+                "libtinyalsa",
+                "libaudio_log_utils",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagmclient_vendor",
+    stem: "libagmclient",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagmclient.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagmmixer_vendor",
+    stem: "libagmmixer",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagmmixer.so",
+            ],
+            shared_libs: [
+                "libtinyalsa",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libai_denoiser_interface",
     owner: "samsung",
     strip: {
@@ -38669,6 +38150,83 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmpbase",
                 "libuniplugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-acdb_vendor",
+    stem: "libar-acdb",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-acdb.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-gpr_vendor",
+    stem: "libar-gpr",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-gpr.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-gsl_vendor",
+    stem: "libar-gsl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-gsl.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -38720,6 +38278,34 @@ cc_prebuilt_library_shared {
                 "libdualcam_refocus_video",
                 "libmpbase",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libats_vendor",
+    stem: "libats",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libats.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libdiag",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -40173,6 +39759,63 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liblx-ar_util_vendor",
+    stem: "liblx-ar_util",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblx-ar_util.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblx-osal_vendor",
+    stem: "liblx-osal",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblx-osal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdiag",
+                "libion",
+                "libpdmapper",
+                "libpdnotifier",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmdmimgload",
     owner: "samsung",
     strip: {
@@ -40723,6 +40366,39 @@ cc_prebuilt_library_shared {
                 "libandroid_net",
                 "libcrypto",
                 "libssl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpalclient_vendor",
+    stem: "libpalclient",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpalclient.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "vendor.qti.hardware.pal@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -42050,6 +41726,66 @@ cc_prebuilt_library_shared {
                 "libavservices_minijail",
                 "vendor.display.config@2.0",
                 "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.AGMIPC@1.0-impl_vendor",
+    stem: "vendor.qti.hardware.AGMIPC@1.0-impl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.AGMIPC@1.0_vendor",
+    stem: "vendor.qti.hardware.AGMIPC@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -44282,6 +44018,85 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "agmcap_vendor",
+    stem: "agmcap",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/agmcap",
+            ],
+            shared_libs: [
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "agmcompressplay_vendor",
+    stem: "agmcompressplay",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/agmcompressplay",
+            ],
+            shared_libs: [
+                "libtinyalsa",
+                "libtinycompress",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "agmplay_vendor",
+    stem: "agmplay",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/agmplay",
+            ],
+            shared_libs: [
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "argosd",
     owner: "samsung",
     target: {
@@ -44955,70 +44770,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.audio.service",
-    owner: "samsung",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.audio.service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbinder",
-                "libhwbinder",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.audio.service_64",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.audio.service_64",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbinder",
-                "libhwbinder",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.bluetooth@1.0-service-qti",
     owner: "samsung",
     target: {
@@ -45554,6 +45305,38 @@ cc_prebuilt_binary {
                 "vendor.display.color@1.7",
                 "vendor.display.postproc@1.0",
                 "libsdm-disp-vndapis",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.hardware.AGMIPC@1.0-service_vendor",
+    stem: "vendor.qti.hardware.AGMIPC@1.0-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
