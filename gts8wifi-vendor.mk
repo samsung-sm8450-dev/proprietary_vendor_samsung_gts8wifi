@@ -230,7 +230,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.kg-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.kg-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.sensordebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensordebug.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -1621,7 +1620,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.iccc@1.0-impl \
     vendor.samsung.hardware.tlc.iccc@1.0 \
     vendor.samsung.hardware.tlc.kg-V2-ndk_platform \
-    vendor.samsung.hardware.vibrator-V4-ndk_platform \
     vendor.samsung.hardware.wifi.hostapd@4.0 \
     vendor.samsung.hardware.wifi.supplicant@3.0 \
     vendor.samsung.hardware.wifi.supplicant@3.1 \
@@ -1707,7 +1705,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml \
     vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml \
     vendor.samsung.hardware.tlc.kg-manifest.xml \
-    vendor.samsung.hardware.vibrator-default.xml \
     vendor.samsung.hardware.wifi.hostapd.xml \
     vendor.samsung.hardware.wifi@2.0-service.xml \
     vendor.qti.qesdsys.service.xml \
@@ -1793,7 +1790,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.iccc@1.0-service \
     vendor.samsung.hardware.tlc.kg-service \
     vendor.samsung.hardware.tlc.ucm@2.0-service \
-    vendor.samsung.hardware.vibrator-service \
     vendor.samsung.hardware.wifi@2.0-service \
     iod \
     ipacm-diag \
