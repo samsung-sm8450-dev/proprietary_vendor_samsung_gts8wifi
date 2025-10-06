@@ -44167,6 +44167,31 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "audioadsprpcd",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/audioadsprpcd",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "audioflacapp",
     owner: "samsung",
     target: {

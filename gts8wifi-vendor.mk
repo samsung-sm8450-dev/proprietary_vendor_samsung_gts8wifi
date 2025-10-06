@@ -1720,6 +1720,7 @@ PRODUCT_PACKAGES += \
     agmplay_vendor \
     argosd \
     athdiag \
+    audioadsprpcd \
     audioflacapp \
     btcoex_cont_config \
     cdsprpcd \
