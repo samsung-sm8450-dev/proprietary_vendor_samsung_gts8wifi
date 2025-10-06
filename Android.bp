@@ -36310,7 +36310,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so",
             ],
             shared_libs: [
-                "libcamera_provider_shim",
+                "libshim_camera",
                 "libhidlbase",
                 "libutils",
                 "libcutils",
