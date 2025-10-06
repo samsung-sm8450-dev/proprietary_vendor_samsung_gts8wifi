@@ -846,6 +846,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gnss-aidl-impl-qti \
     android.hardware.renderscript@1.0-impl \
