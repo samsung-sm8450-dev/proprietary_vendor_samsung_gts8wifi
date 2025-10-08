@@ -168,7 +168,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_qsee.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/power-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power-default-sec.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qapeservice.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
@@ -331,7 +330,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.info \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8450_snpe2106_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideo_INT8_V102_sm8450_snpe2106_vendor.dlc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/portrait_data/single_bokeh_feature_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature_vendor.json \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
@@ -864,7 +862,6 @@ PRODUCT_PACKAGES += \
     fingerprint.default \
     gralloc.default \
     local_time.default \
-    power.default \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.eid@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
@@ -1683,7 +1680,6 @@ PRODUCT_PACKAGES += \
     manifest_non_qmaa.xml \
     memtrack_qti.xml \
     mppserver.xml \
-    power-samsung.xml \
     radio_manifest_wifionly.xml \
     sec_c2_manifest_default0_1_0.xml \
     secaudiohalaidl_manifest.xml \
@@ -1747,7 +1743,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
     android.hardware.media.omx@1.0-service \
-    android.hardware.power.samsung-service \
     android.hardware.security.keymint-service \
     android.hardware.usb@1.3-service.coral \
     macloader \

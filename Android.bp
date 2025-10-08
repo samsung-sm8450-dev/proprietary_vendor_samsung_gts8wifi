@@ -11196,44 +11196,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "power.default",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/power.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/power.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.capabilityconfigstore@1.0-impl",
     owner: "samsung",
     strip: {
@@ -43603,15 +43565,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "power-samsung.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/power-samsung.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "radio_manifest_wifionly.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/radio_manifest_wifionly.xml",
@@ -44990,37 +44943,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.power.samsung-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.power.samsung-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libutils",
-                "libcutils",
-                "libhypervintf",
-                "android.hardware.power-V1-ndk_platform",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },
