@@ -19534,55 +19534,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhypervintf",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhypervintf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidlbase",
-                "vendor.samsung.hardware.hyper-V2-ndk_platform",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhypervintf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidlbase",
-                "vendor.samsung.hardware.hyper-V2-ndk_platform",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libidl",
     owner: "samsung",
     strip: {
@@ -39607,7 +39558,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhyper_vendor",
+    name: "libhypervintf",
     owner: "samsung",
     strip: {
         none: true,
@@ -39615,16 +39566,16 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhyper_vendor.so",
+                "proprietary/vendor/lib64/libhypervintf.so",
             ],
             shared_libs: [
-                "libutils",
                 "libcutils",
-                "libhardware",
                 "liblog",
-                "libbase",
-                "libjsoncpp",
-                "libcrypto",
+                "libutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "vendor.samsung.hardware.hyper-V2-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -43598,15 +43549,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "hyper-default-sec.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "iweaver_v1_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/iweaver_v1_manifest.xml",
@@ -45906,39 +45848,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.hyper-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhyper_vendor",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libbinder_ndk",
-                "vendor.samsung.hardware.hyper-V2-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",

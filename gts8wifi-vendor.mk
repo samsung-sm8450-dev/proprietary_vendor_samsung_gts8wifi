@@ -138,7 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/emservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/emservice.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/gts8wifi/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/samsung/gts8wifi/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
@@ -1047,7 +1046,6 @@ PRODUCT_PACKAGES += \
     libhermes \
     libhypermotion_core \
     libhypermotion_interface \
-    libhypervintf \
     libidl \
     libimage_enhancement.arcsoft \
     libimagecodec_native.quram \
@@ -1509,7 +1507,7 @@ PRODUCT_PACKAGES += \
     libhermes_bdbridge \
     libhermes_cred \
     libhwvault \
-    libhyper_vendor \
+    libhypervintf \
     libkeymasterutils \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
@@ -1679,7 +1677,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio.xml \
     deviceManifest.xml \
     engmode_manifest.xml \
-    hyper-default-sec.xml \
     iweaver_v1_manifest.xml \
     lights-default-sec.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
@@ -1775,7 +1772,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.authfw@1.0-service \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.camera.provider@4.0-service_64 \
-    vendor.samsung.hardware.hyper-service \
     vendor.samsung.hardware.light-service \
     vendor.samsung.hardware.media.converter@1.0-service \
     vendor.samsung.hardware.miscpower@2.0-service \
