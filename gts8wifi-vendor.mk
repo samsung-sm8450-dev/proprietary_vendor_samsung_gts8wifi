@@ -642,6 +642,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/uw_dual_calibration.bin \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagm_compress_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_compress_plugin.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagm_mixer_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_mixer_plugin.so \
+    vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagm_pcm_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_pcm_plugin.so \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmclient.so \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/libagmmixer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmmixer.so \
     vendor/samsung/gts8wifi/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
@@ -1454,6 +1457,9 @@ PRODUCT_PACKAGES += \
     libTsAwbFront_GTS8 \
     libTsAwb_GTS8 \
     libagm_vendor \
+    libagm_compress_plugin_vendor \
+    libagm_mixer_plugin_vendor \
+    libagm_pcm_plugin_vendor \
     libagmclient_vendor \
     libagmmixer_vendor \
     libai_denoiser_interface \
